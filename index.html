@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chấm Điểm Thí Sinh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoring-container">
+        <div>
+            <label>Tên Người Chấm:</label>
+            <select id="judgeNameInput" class="judge-select">
+                <option value="">Chọn Giám Khảo</option>
+                <option value="Nguyễn Văn X">Nguyễn Văn X</option>
+                <option value="Trần Thị Y">Trần Thị Y</option>
+                <option value="Lê Văn Z">Lê Văn Z</option>
+                <option value="Phạm Thị W">Phạm Thị W</option>
+                <option value="Lã Tiến Quân">Lã Tiến Quân</option>
+            </select>
+        </div>
+
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="button">Trước</button>
+            <button id="nextBtn" class="button">Sau</button>
+        </div>
+
+        <h2 id="contestantName">Tên Thí Sinh</h2>
+        <p id="contestantTopic">Đề Tài</p>
+
+        <img id="contestantImage" src="https://via.placeholder.com/250x300" alt="Thí Sinh" class="contestant-image">
+
+        <div>
+            <label>Sáng Tạo</label>
+            <input type="number" id="innovationScore" min="0" max="10" class="score-input" placeholder="Điểm sáng tạo (0-10)">
+            <div id="innovationError" class="error-message"></div>
+        </div>
+
+        <div>
+            <label>Trình Bày</label>
+            <input type="number" id="presentationScore" min="0" max="10" class="score-input" placeholder="Điểm trình bày (0-10)">
+            <div id="presentationError" class="error-message"></div>
+        </div>
+
+        <div>
+            <label>Kỹ Thuật</label>
+            <input type="number" id="technicalScore" min="0" max="10" class="score-input" placeholder="Điểm kỹ thuật (0-10)">
+            <div id="technicalError" class="error-message"></div>
+        </div>
+
+        <div class="total-score">
+            Tổng Điểm: <span id="totalScore">0</span>
+        </div>
+
+        <div>
+            <button id="saveBtn" class="button">Lưu Điểm</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <h2>Chấm Điểm Thành Công</h2>
+        <p id="popupMessage"></p>
+        <button id="closePopupBtn" class="button">Đóng</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
