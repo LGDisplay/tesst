@@ -7,7 +7,7 @@ const contestants = [
     {
         name: "Trần Thị B", 
         topic: "Giải Pháp Môi Trường Thông Minh",
-        image: "https://via.placeholder.com/250x300"
+        image: "image/LG Display.PNG"
     },
     {
         name: "Lê Văn C",
